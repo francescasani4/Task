@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Task' " />
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Parte3\" />
+    <None Remove="Parte4\" />
+    <None Remove="Parte5\" />
+    <None Remove="Parte6\" />
+    <None Remove="Parte7\" />
+    <None Remove="Parte8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Parte3\" />
+    <Folder Include="Parte4\" />
+    <Folder Include="Parte5\" />
+    <Folder Include="Parte6\" />
+    <Folder Include="Parte7\" />
+    <Folder Include="Parte8\" />
+  </ItemGroup>
+</Project>
